@@ -1,12 +1,14 @@
-package dao.retrofit.modelo;
+package modelo;
+
+import lombok.Data;
 
 import java.util.List;
-
-public class ResultsItem{
+@Data
+public class Character {
 	private Thumbnail thumbnail;
 	private List<UrlsItem> urls;
 	private Stories stories;
-	private Series series;
+	private Series2 series2;
 	private Comics comics;
 	private String name;
 	private String description;

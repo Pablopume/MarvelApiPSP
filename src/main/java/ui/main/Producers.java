@@ -1,36 +1,24 @@
 package ui.main;
 
+import common.Constantes;
 import jakarta.enterprise.inject.Produces;
 import jakarta.inject.Named;
-//import jakarta.inject.Singleton;
-//import jakarta.validation.Validation;
-//import jakarta.validation.Validator;
-//import jakarta.validation.ValidatorFactory;
 
 
 public class Producers {
 
 
     @Produces
-    @Named("url")
-    public String getUrl()
-    {
-        return "jjj";
+    @Named(Constantes.URLNAMED)
+    public String getUrl() {
+        return Constantes.JJJ;
     }
 
     @Produces
-    @Named("configDB")
-    public String getDB()
-    {
-        return "jjj";
+    @Named(Constantes.CONFIG_DB)
+    public String getDB() {
+        return Constantes.JJJ;
     }
 
-//    @Produces
-//    @Singleton
-//    public Validator createValidator(@Named("url")String s) {
-//        ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
-//        Validator validator = factory.getValidator();
-//        return validator;
-//    }
 
 }

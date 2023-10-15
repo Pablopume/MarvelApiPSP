@@ -1,10 +1,12 @@
-package dao.retrofit.modelo;
+package modelo;
 
 import java.util.List;
 
 public class Events{
 	private String collectionURI;
-	private int available;
-	private int returned;
+	private String available;
+	private String returned;
 	private List<ItemsItem> items;
+
+
 }

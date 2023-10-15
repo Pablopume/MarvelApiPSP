@@ -1,4 +1,4 @@
-package dao.retrofit.modelo;
+package modelo;
 
 import java.util.List;
 

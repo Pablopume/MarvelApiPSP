@@ -7,22 +7,24 @@ module javafx11.multipantalla {
     requires jakarta.inject;
     requires jakarta.cdi;
     requires io.vavr;
-
-
-
-
+    requires retrofit2;
+    requires retrofit2.converter.gson;
+    requires okhttp3;
+    requires com.squareup.moshi;
+    requires retrofit2.converter.moshi;
+    exports servicios.impl;
+    exports dao.retrofit;
     exports ui.main to javafx.graphics;
     exports ui.pantallas.principal;
-
-    exports ui.pantallas.common;
- exports domain.modelo;
-
-
+    exports dao;
+    opens dao.impl;
     opens ui.pantallas.principal;
     opens ui.main;
     opens css;
     opens fxml;
-    exports dao.retrofit.modelo;
+    exports modelo;
+    exports common;
+    opens modelo;
 
 
 }
